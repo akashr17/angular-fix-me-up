@@ -2,3 +2,7 @@
 @use 'styles-font';
 
 // TODO: 1. the header (footer) needs to run flush to the top (bottom) and sides
+// DONE by changing margin to 0px and padding in app.component.scss
+body{
+  margin:0px;
+}
