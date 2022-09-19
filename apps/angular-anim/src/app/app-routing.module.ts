@@ -12,7 +12,8 @@ const routes: Routes = [
   { path: '', component: AccountSummaryComponent },
   { path: 'about', component: AboutComponent },
   { path: 'account/:id', component: AccountDetailsComponent },
-  { path: 'transfers', component: TransferComponent}
+  { path: 'transfers', component: TransferComponent},
+  { path: 'account/:id', component: AccountDetailsComponent}
 ];
 
 @NgModule({
