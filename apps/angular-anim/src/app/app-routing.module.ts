@@ -13,7 +13,6 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent },
   { path: 'account/:id', component: AccountDetailsComponent },
   { path: 'transfers', component: TransferComponent},
-  { path: 'account/:id', component: AccountDetailsComponent}
 ];
 
 @NgModule({

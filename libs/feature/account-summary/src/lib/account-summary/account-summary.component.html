@@ -18,7 +18,8 @@
       </tr>
       <tr *ngFor="let account of filterAccounts(accounts)">
         <!-- TODO: 8. route to detail view -->
-        <th><a>{{account.id}}</a></th>
+        <th><a (click)="retrieveAccount(account.id)">{{account.id}}</a></th>
+        <!-- <th><button onclick="retrieveAccount(account.id)">{{account.id}}</button></th> -->
         <td>{{account.balance}}</td>
         <td>{{account.currency}}</td>
       </tr>
