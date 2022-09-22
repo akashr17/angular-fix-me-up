@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 @use 'styles-font';
 
-// TODO: 1. the header (footer) needs to run flush to the top (bottom) and sides
+// TODO: 1. the header (footer) needs to run flush to the top (bottom) and sides (DONE)
 // DONE by changing margin to 0px and padding in app.component.scss
 body{
   margin:0px;
+}
+table{
+  width: 100%;
 }

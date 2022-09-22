@@ -1,4 +1,4 @@
-// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done
+// TODO: 5. Fixing one thing may break other things, but sometimes it has to be done (DONE)
 main {
   // try to keep these
   display: grid;
@@ -8,8 +8,10 @@ main {
   // padding-left: 0px;
   // padding-right: 0px;
 }
-
+// Gave each route specific element a 20px padding to keep it inline with the header and nav bar
+// didn't give the nav bar the padding because it looked better incline with the header and content instead of being shifted over
 article{
   padding-left: 20px;
   padding-right: 20px;
 }
+

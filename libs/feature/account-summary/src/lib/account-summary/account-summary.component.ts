@@ -25,12 +25,14 @@ export class AccountSummaryComponent implements OnInit {
     });
   }
 
+  // Based on the account id, it filters the accounts to give the current account the right value and navigates to it
   retrieveAccount(id: string){
     console.log(id);
     console.log('here')
     this.accountService.currentaccount = this.accounts.filter(acc=>acc.id === id)[0]
     this.router.navigate(['/account',id]);
   }
+
   filterAccounts(accounts: Account[]) {
     return accounts.filter(acc => acc.currency === this.accountsFilter || this.accountsFilter === '');
   }

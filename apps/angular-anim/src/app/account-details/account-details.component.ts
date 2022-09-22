@@ -18,10 +18,12 @@ export class AccountDetailsComponent implements OnInit{
       console.log("testing here")
       this.accountService.retreiveAccount().subscribe((curr)=>
       {
+        // checks account services to see if there is a current account (if someone clicked account name it would add the account to the current account)
         if (curr) {
           this.account = curr;
           console.log(this.account)
         }
+        // if not, that means someone directly wanted to route to that account using the url, so the url is parsed to see which account is needed
         else {
           this.accountService.getAccounts().subscribe((accounts) => {
             this.account = accounts.filter(acc=>acc.id === this.route.url.split("/", 3)[2])[0]

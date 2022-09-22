@@ -2,6 +2,28 @@ th[scope='col'] {
   border-bottom: 1px solid #333;
 }
 
+tr{
+  text-align: center;
+}
+
 tr:nth-child(2n) {
   background-color: #DEDEDE;
+}
+
+.pointer{
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.small{
+  display: block;
+  font-size: x-small;
+}
+
+.title{
+  display: block;
+}
+
+select{
+  font-size: x-small;
 }

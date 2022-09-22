@@ -15,13 +15,13 @@ export class AccountService {
 
   getAccounts(): Observable<Account[]> {
     const accounts: Account[] = [
-      { id: "1234", balance: 7500, currency: "cad" },
-      { id: "1235", balance: 4500, currency: "cad" },
-      { id: "1236", balance: 2102, currency: "usd" },
+      { id: "1234", balance: 7500, currency: "CAD" },
+      { id: "1235", balance: 4500, currency: "CAD" },
+      { id: "1236", balance: 2102, currency: "USD" },
     ];
     return of(accounts);
   }
-
+// returns the current account
   retreiveAccount(): Observable<Account>{
     return of(this.currentaccount);
   }
